@@ -12,4 +12,24 @@ import "../styles/index.scss";
 import { Home } from "./component/home.js";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+let userInput = window.prompt("how high?");
+let counter = 0;
+
+const renderCount = () => {
+	counter += 1;
+	let displayCount = "000000" + counter;
+	let countUp = displayCount.slice(-6);
+
+	ReactDOM.render(
+		<Home
+			prop1={countUp.charAt(0)}
+			prop2={countUp.charAt(1)}
+			prop3={countUp.charAt(2)}
+			prop4={countUp.charAt(3)}
+			prop5={countUp.charAt(4)}
+			prop6={countUp.charAt(5)}
+		/>,
+		document.querySelector("#app")
+	);
+};
+setInterval(renderCount, 1000);
