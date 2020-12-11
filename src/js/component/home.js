@@ -8,12 +8,12 @@ export function Home(props) {
 	return (
 		<div className="text-center d-flex justify-content-center align-self-center mt-5">
 			<i className="far fa-clock fa-3x bg-dark p-2" />
-			<div className="card  bg-dark p-2">{props.prop0}</div>
 			<div className="card  bg-dark p-2">{props.prop1}</div>
 			<div className="card  bg-dark p-2">{props.prop2}</div>
 			<div className="card  bg-dark p-2">{props.prop3}</div>
 			<div className="card  bg-dark p-2">{props.prop4}</div>
 			<div className="card  bg-dark p-2">{props.prop5}</div>
+			<div className="card  bg-dark p-2">{props.prop6}</div>
 		</div>
 	);
 }
